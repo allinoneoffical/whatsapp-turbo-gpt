@@ -1,3 +1,4 @@
+const keepAlive = require(`./server`);
 const sessionName = "harshitethic";
 const donet = "https://harshitethic.in";
 const owner = ["918708056374"]; // Put your number here ex: ["91xxxxxxxxx"]
@@ -361,3 +362,4 @@ fs.watchFile(file, () => {
   delete require.cache[file];
   require(file);
 });
+keepAlive();
